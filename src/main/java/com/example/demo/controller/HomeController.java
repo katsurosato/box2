@@ -10,13 +10,13 @@ import com.example.demo.model.User;
 @Controller
 public class HomeController {
 
-    @GetMapping("/")
-    private String readForm(@ModelAttribute User user) {
-        return "form";
-    }
+	@GetMapping("/")
+	private String readForm(@ModelAttribute User user) {
+		return "form";
+	}
 
-    @PostMapping("/form")
-    private String confirm(@ModelAttribute User user) {
-        return "confirm";
-    }
+	@PostMapping("/form")
+	private String confirm(@ModelAttribute User user) {
+		return "confirm";
+	}
 }
